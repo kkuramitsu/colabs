@@ -45,6 +45,7 @@ func(3)  # 6
 | 関数 | 説明 |
 |---|---|
 | `func(x)` | 受け取った値を2倍にして返す(サンプル) |
+| `source(obj)` | 関数のソースコードを表示する。例: `source(show_chars)` |
 | `show_chars(text)` | 文字列を1文字ずつ分解し、Unicode コードポイント・UTF-8 バイト列・カテゴリ・文字名を表示する |
 
 ## 構成
@@ -56,7 +57,8 @@ colabs/
 └── colabs/
     ├── __init__.py     # 公開する関数を import する
     ├── exercises.py    # 演習用の関数
-    └── chars.py        # 文字コード関連(show_chars)
+    ├── chars.py        # 文字コード関連(show_chars)
+    └── source.py       # ソースコード表示(source)
 ```
 
 ## 関数の追加方法(教員向け)
