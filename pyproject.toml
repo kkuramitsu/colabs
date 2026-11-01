@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colabs"
+version = "0.1.0"
+description = "授業の演習用関数集"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[tool.setuptools]
+packages = ["colabs"]
