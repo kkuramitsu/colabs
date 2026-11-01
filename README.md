@@ -45,6 +45,8 @@ func(3)  # 6
 | 関数 | 説明 |
 |---|---|
 | `func(x)` | 受け取った値を2倍にして返す(サンプル) |
+| `show_tokens_janome(text)` | janome で形態素解析し、トークン数と、1語ごとの字句・品詞・原形を表示する(未インストールなら自動でインストール) |
+| `show_tokens_sudachi(text, mode="C")` | SudachiPy で形態素解析する。mode は A(短い)/B/C(長い)(未インストールなら自動でインストール) |
 | `source(obj)` | 関数のソースコードを表示する。例: `source(show_chars)` |
 | `show_chars(text)` | 文字数と、1文字ずつの見え方・コードポイント・UTF-8 の16進数・バイト数を表示する |
 
@@ -58,6 +60,8 @@ colabs/
     ├── __init__.py     # 公開する関数を import する
     ├── exercises.py    # 演習用の関数
     ├── chars.py        # 文字コード関連(show_chars)
+    ├── morphology.py   # 形態素解析(show_tokens_janome, show_tokens_sudachi)
+    ├── install.py      # ライブラリの自動インストール(require)
     └── source.py       # ソースコード表示(source)
 ```
 
